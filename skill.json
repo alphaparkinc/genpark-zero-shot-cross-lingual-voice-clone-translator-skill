@@ -1,0 +1,41 @@
+{
+  "name": "genpark-zero-shot-cross-lingual-voice-clone-translator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Zero-shot cross-lingual voice cloning translator preserving speaker acoustic timbre with high-accuracy lip-sync alignment.",
+  "author": "genpark",
+  "category": "voice-translation",
+  "tags": [
+    "heygen",
+    "voice-cloning",
+    "cross-lingual-translation",
+    "lip-sync",
+    "neural-dubbing"
+  ],
+  "inputs": {
+    "source_video_url": {
+      "type": "string"
+    },
+    "target_language_code": {
+      "type": "string"
+    },
+    "lip_sync_alignment": {
+      "type": "boolean"
+    }
+  },
+  "outputs": {
+    "voice_translation_id": {
+      "type": "string"
+    },
+    "speaker_timbre_similarity_pct": {
+      "type": "number"
+    },
+    "phoneme_viseme_lip_sync_accuracy_pct": {
+      "type": "number"
+    },
+    "dubbed_video_stream_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
